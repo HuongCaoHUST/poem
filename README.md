@@ -14,4 +14,11 @@ Sau đó truy cập <http://localhost:8000>.
 
 ## GitHub Pages
 
-Trong repository GitHub, vào **Settings → Pages**, chọn **Deploy from a branch**, chọn nhánh `main` và thư mục `/ (root)`. Vì đây là site HTML tĩnh, GitHub Pages sẽ xuất bản trực tiếp từ `index.html`.
+Workflow tại `.github/workflows/deploy-pages.yml` sẽ tự deploy site mỗi khi có thay đổi trên branch `master`.
+
+Trong repository GitHub:
+
+1. Vào **Settings → Pages**.
+2. Ở **Source**, chọn **GitHub Actions**.
+3. Đẩy các file của project lên branch `master`.
+4. Mở tab **Actions** để theo dõi workflow `Deploy to GitHub Pages`.
